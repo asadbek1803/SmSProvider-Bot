@@ -1,8 +1,8 @@
 from typing import Callable, Dict, Any, Awaitable
 from aiogram import BaseMiddleware
 from aiogram.types import Message
-from loader import db
-from data.config import ADMINS
+from loader import db, ADMINS
+
 
 class AccessMiddleware(BaseMiddleware):
     async def __call__(
