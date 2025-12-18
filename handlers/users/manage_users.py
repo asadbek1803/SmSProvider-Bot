@@ -1,7 +1,9 @@
 from aiogram import Router, F, types
-from loader import db
+from loader import db, ADMINS
 from keyboards.inline.manage_users import get_users_list_keyboard, get_user_actions_keyboard
-from data.config import ADMINS
+
+
+
 
 router = Router()
 
