@@ -1,5 +1,5 @@
 import aiosqlite
-
+"""Module for interacting with SQLite database asynchronously using aiosqlite."""
 
 class Database:
     def __init__(self, path_to_db="main.db"):
