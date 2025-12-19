@@ -2,7 +2,6 @@
 env/
 main.db
 __pycache__/
-data/
 logs/
 venv/
 

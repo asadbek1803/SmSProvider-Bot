@@ -34,6 +34,10 @@ async def get_sms_file(message: types.Message, state: FSMContext):
     file = await bot.get_file(file_id)
     file_path = file.file_path
     destination = f"data/{file_name}"
+    
+    # Ensure data directory exists
+    os.makedirs("data", exist_ok=True)
+    
     await bot.download_file(file_path, destination)
     
     await message.answer("⏳ Fayl o'qilmoqda va xabarlar yuborilmoqda...")
